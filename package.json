@@ -3,18 +3,37 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Converts between Anno Domini (AD/Gregorian) and Bikram Sambat (BS/Nepali) dates.",
+  "files": ["src/", "README.md", "LICENSE"],
+  "keywords": ["bikram-sambat", "nepali-calendar", "date-conversion", "BS-to-AD", "AD-to-BS", "nepali-date", "nepali-calendar-date", "nepali-date-conversion"],
   "main": "src/bs-date.js",
   "scripts": {
     "start": "npm run lint && node src/bs-date.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "dev": "nodemon src/bs-date.js test/bs-date.test.js",
     "lint": "eslint src/**/*.js"
   },
   "author": "Deepak Lamichhane <lamichhanedeepak@gmail.com> (https://github.com/lamichhanedeepak)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lamichhanedeepak/bs-date"
+  },
+  "homepage": "https://github.com/lamichhanedeepak/bs-date",
+  "bugs": {
+    "url": "https://github.com/lamichhanedeepak/bs-date/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.35.0",
     "eslint": "^9.35.0",
     "globals": "^16.3.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "julian": "^0.2.0"
   }
 }
