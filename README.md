@@ -272,6 +272,8 @@ The library includes comprehensive data for Bikram Sambat calendar:
 
 ## Development
 
+Development tools require Node.js 20.19+ (20.x), 22.13+ (22.x), or 24 and later. The published library still supports Node.js 18 and later.
+
 ### Running Tests
 
 ```bash
