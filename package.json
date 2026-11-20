@@ -1,6 +1,6 @@
 {
   "name": "bs-date",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "type": "module",
   "description": "Converts between Anno Domini (AD/Gregorian) and Bikram Sambat (BS/Nepali) dates.",
   "files": [
